@@ -3,7 +3,7 @@ import type { CSSProperties } from "react";
 const firstName = 'Angel';
 const lastName = 'Prado';
 const favoriteGame = ['halo', 'fifa', 'cod'];
-const adress = {
+const address = {
     zipCode: 'ABC-123',
     country: 'Chile'
 }
@@ -20,9 +20,7 @@ const myStyles: CSSProperties = {
 
 }
 
-export function MyAwesomeApp() {
-
-
+export const MyAwesomeApp = () => {
     return (
         <>
             <h1>{firstName}</h1>
@@ -34,8 +32,9 @@ export function MyAwesomeApp() {
 
             <p
                 style={myStyles}
-            >{JSON.stringify(adress)}</p>
+            >{JSON.stringify(address)}</p>
         </>
-    )
+    );
 
-}
+};
+export default MyAwesomeApp;
